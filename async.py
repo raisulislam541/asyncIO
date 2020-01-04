@@ -14,6 +14,7 @@ async def main():
         async with session.post(url=url, ssl=False, headers=headers,
                                 data=data) as resp:
             responded_data = await resp.json()
+            print(responded_data)
 
 
 asyncio.run(main())
